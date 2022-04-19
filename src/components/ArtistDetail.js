@@ -65,7 +65,7 @@ class ArtistDetail extends React.Component {
     const {classes} = this.props;
 
     const backToHome = (
-      <Link className={classes.backToHome} to="/topArtist">
+      <Link className={classes.backToHome} to="/">
         BackToHome
       </Link>
     );
