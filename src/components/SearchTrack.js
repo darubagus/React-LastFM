@@ -28,8 +28,6 @@ class SearchTrack extends Component {
    * Method to mount the component
    */
   componentDidMount() {
-    console.log('search track');
-    console.log(this.props);
     window.scrollTo(0, 0);
     const trackName = this.props.match.params.trackName;
     this.fetchTrackData(trackName);
@@ -48,13 +46,12 @@ class SearchTrack extends Component {
   }
 
   /**
-   * Method to render artist tile
+   * Method to render track tile
    * @param {number} i
    * @return {JSX}
    */
-  renderArtistTile = (i) => {
+  renderTrackTile = (i) => {
     const {classes, searchTrack} = this.props;
-    console.log(searchTrack);
     const track = searchTrack.artists;
     return (
       <Card className={classes.card}>
@@ -104,7 +101,7 @@ class SearchTrack extends Component {
           <div className="track-listing__blocks">
             {this.props.searchTrack.artists !== undefined ?
               this.props.searchTrack.artists.map((item, index) => {
-                return <div key={index}>{this.renderArtistTile(index)}</div>;
+                return <div key={index}>{this.renderTrackTile(index)}</div>;
               }) :
               []}
           </div>
