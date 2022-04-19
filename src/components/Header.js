@@ -13,7 +13,7 @@ const Header = (props) => {
   const {classes} = props;
 
   const topArtist = (
-    <Link className={classes.topArtist} to="/topArtist">
+    <Link className={classes.topArtist} to="/">
         Top Artist
     </Link>
   );
@@ -28,6 +28,9 @@ const Header = (props) => {
     <div className={classes.root}>
       <AppBar className={classes.appBar}>
         <Toolbar className={classes.t}>
+          <div className='copyright-container'>
+            <h4 className='copyright'>Copyright Daru Bagus Dananjaya 2022</h4>
+          </div>
           <div className='button-header'>
             {topArtist}
           </div>

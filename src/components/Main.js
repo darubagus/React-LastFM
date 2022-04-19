@@ -1,9 +1,9 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import Artist from './Artist';
 import Header from './Header';
 import '../styles/main.css';
 import Track from './Track';
-
 
 const Main = (props) => {
   return (

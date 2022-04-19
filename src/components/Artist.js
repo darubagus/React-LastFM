@@ -6,7 +6,7 @@ import ArtistDetail from './ArtistDetail';
 const Artist = (props) => (
   <main>
     <Switch>
-      <Route exact path="/topArtist" render={() => <TopArtist {...props} />} />
+      <Route exact path="/" render={() => <TopArtist {...props} />} />
       <Route
         exact
         path="/artistInfo/:artistName"
