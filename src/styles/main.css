@@ -1,0 +1,60 @@
+.Artist-content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 84px;
+  min-height: 150vh;
+}
+
+.artist-listing__blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.track-listing__blocks {
+  display: inline-block;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-count: 5;
+}
+
+.container_track {
+  display: flex;
+  justify-content: center;
+}
+
+.button-header {
+  display: flex;
+  justify-content: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+}
+
+.Details-content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 84px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 35rem;
+}
+
+.search-button {
+  display: flex;
+  justify-content: center;
+  margin-right: 1em;
+}
